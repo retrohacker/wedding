@@ -1,0 +1,23 @@
+{
+  "name": "wedding-website",
+  "version": "0.0.1",
+  "authors": [
+    "Will Blankenship <william.jblankenship@gmail.com>"
+  ],
+  "description": "The Blankenship Barry Wedding",
+  "license": "MIT",
+  "homepage": "blankenship.wedding",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "moment": "~2.10.3",
+    "jquery.countdown": "~2.0.4",
+    "moment-timezone": "~0.4.0"
+  }
+}

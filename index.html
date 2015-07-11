@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+    <script src="/bower_components/moment/min/moment-with-locales.min.js"></script>
+    <script src="/bower_components/moment-timezone/builds/moment-timezone-with-data.min.js"></script>
+
+    <link rel="stylesheet" href="/bower_components/flipclock/compiled/flipclock.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Satisfy' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Acme|Sarala|Ramabhadra|Days+One' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Venu</a></li>
+            <li><a href="#">Travel</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <a class="navbar-brand emoji" href="#">&#x1F491;</a>
+    <div class="wedding-splash">
+      <div class="wedding-us">
+      </div>
+    </div>
+    <div class="wedding-title">
+      Barry-Blankenship Wedding<br>in<div class="wedding-title-clock"></div>
+    </div>
+    <div class="wedding-resort">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 wedding-column">
+            <img src="/images/copperwynd1.jpg">
+            Our wedding will take place at the beautiful CopperWynd Resort and Club in Fountain Hills, Arizona. The venue has gorgeous landscaping and breathtaking views, along with a spacious outdoor pool, golf course, tennis court, and spa. We have blocked off 25 rooms, which are available for Saturday, May 28 and Sunday, May 29.
+          </div>
+          <div class="col-sm-6 wedding-column">
+            <img src="/images/copperwynd1.jpg">
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var thedate = moment.tz("2016-05-29T18:00:00","America/Phoenix").toDate()
+      $('div.wedding-title-clock').countdown(thedate,function(event) {
+        $(this).text(
+          event.strftime('%D:%H:%M:%S')
+        )
+      })
+    </script>
+  </body>
+</html>
