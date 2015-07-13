@@ -1,0 +1,14 @@
+{
+  "name": "tween.js",
+  "homepage": "https://github.com/tweenjs/tween.js",
+  "_release": "r14",
+  "_resolution": {
+    "type": "tag",
+    "tag": "r14",
+    "commit": "9989f6bb7fce751ee56493d0d49137f1de740234"
+  },
+  "_source": "git@github.com:tweenjs/tween.js.git",
+  "_target": "r14",
+  "_originalSource": "git@github.com:tweenjs/tween.js",
+  "_direct": true
+}
