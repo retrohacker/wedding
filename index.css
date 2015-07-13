@@ -1,6 +1,6 @@
 body {
   background-color: #EDE2BD;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 @font-face {
   font-family: "Emoji";
