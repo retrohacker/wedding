@@ -33,16 +33,19 @@ nav {
   border-bottom: 5px solid #666;
 }
 .wedding-color1 {
-  background-color: #16A6C9;
-}
-.wedding-color2 {
-  background-color: #E33030;
-}
-.wedding-color3 {
   background-color: #D43B08;
 }
-.wedding-color4 {
+.wedding-color2 {
   background-color: #D11919;
+}
+.wedding-color3 {
+  background-color: #E33A3A;
+}
+.wedding-color4 {
+  background-color: #17B9E4;
+}
+.wedding-color {
+  height: 30px;
 }
 .wedding-us {
   height: 150px;
@@ -60,21 +63,13 @@ nav {
 }
 .wedding-title {
   font-family: 'Satisfy', cursive;
-  font-size: 3em;
+  font-size: 3.5em;
   text-align: center;
-  margin-top: .5em;
-  padding: 0 .2em;
-}
-.wedding-column {
-  padding: 1em;
-  font-size: 1.3em;
-  font-family: 'Ramabhadra';
-}
-.wedding-column img {
-  width: 100%;
-  float: right;
-  margin: 0 .5em;
-  border-radius: 1em;
+  padding: 1em 0;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #wedding-sun {
   width: 15%;
@@ -91,4 +86,57 @@ nav {
   left: 0;
   width: 100%;
   min-height: 300px;
+}
+.wedding-countdown {
+  position: absolute;
+  bottom: .5em;
+  font-family: 'Satisfy', cursive;
+  font-size: 3.5em;
+  text-align: center;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #CCC;
+}
+.wedding-section {
+  font-family: 'Satisfy', cursive;
+  font-size: 3.5em;
+  text-align: center;
+  padding-top: .3em;
+}
+.wedding-text {
+  padding: 1.3em;
+  font-size: 1.5em;
+  font-family: 'PT Serif Caption', serif;
+}
+.wedding-text a {
+  font-weight: bold;
+  color: #444;
+}
+.wedding-column img {
+  width: 100%;
+  margin: 0 .5em;
+  margin: 1.3em 0;
+  border-radius: 1em;
+}
+.wedding-column iframe {
+  width: 100%;
+  margin: 0 .5em;
+  margin: 1.3em 0;
+  height: 400px;
+}
+.wedding-map-title {
+  font-size: 1.3em;
+  font-family: "PT Serif Caption",serif;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.wedding-flights {
+  text-align: center;
+}
+.wedding-flights img {
+  height: 75px;
+  margin-top: .5em;
+  margin-bottom: 1em;
+
 }
