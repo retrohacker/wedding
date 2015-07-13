@@ -1,5 +1,6 @@
 body {
   background-color: #EDE2BD;
+  overflow: hidden;
 }
 @font-face {
   font-family: "Emoji";
@@ -20,12 +21,14 @@ body {
   z-index: 99999;
 }
 nav {
-margin-bottom:0 !important;
+  margin-bottom:0 !important;
 }
 .wedding-splash {
   width: 100%;
-  height: 300px;
-  background-image: url("http://t.realgeeks.media/thumbnail/hYjzQw0fNut6N3qFgB5ZCaQxA-k=/fit-in/960x0/u.realgeeks.media/findyourazhome/search_scottsdale_arizona_homes_and_phoenix_real_estate.png");
+  height: 600px;
+  position: relative;
+  background-image: -webkit-linear-gradient(-70deg,#D43B08 13%,#D11919 100%);
+  background-image: linear-gradient(-70deg,#D43B08 13%,#D11919 100%);
   background-size: cover;
   border-bottom: 5px solid #666;
 }
@@ -72,4 +75,20 @@ margin-bottom:0 !important;
   float: right;
   margin: 0 .5em;
   border-radius: 1em;
+}
+#wedding-sun {
+  width: 15%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#wedding-sunpath {
+  opacity:0;
+}
+.wedding-mountains {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 300px;
 }

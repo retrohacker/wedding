@@ -5,8 +5,7 @@
     <script src="/bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
     <script src="/bower_components/moment/min/moment-with-locales.min.js"></script>
     <script src="/bower_components/moment-timezone/builds/moment-timezone-with-data.min.js"></script>
-
-    <link rel="stylesheet" href="/bower_components/flipclock/compiled/flipclock.css">
+    <script src="/bower_components/tween.js/build/tween.min.js"></script>
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="./index.css">
@@ -30,16 +29,41 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">Venu</a></li>
+            <li><a href="#">Venue</a></li>
             <li><a href="#">Travel</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      </div><!-- /.container-fluid -->
+    </nav>
     <a class="navbar-brand emoji" href="#">&#x1F491;</a>
     <div class="wedding-splash">
-      <div class="wedding-us">
-      </div>
+      <svg
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+         width="730.21875"
+         height="311.99475"
+         id="wedding-sunpath"
+         version="1.1"
+         inkscape:version="0.48.5 r10040"
+         sodipodi:docname="sun_path.svg">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 0.4460685,311.76947 c 364.3026515,-700.3595 729.3301315,0 729.3301315,0"
+           id="path3790"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+      </svg>
+      <img src="/images/sun.svg" id="wedding-sun"></object>
+    <img src="/images/mountains1.svg" class="wedding-mountains"></object>
     </div>
     <div class="wedding-title">
       Barry-Blankenship Wedding<br>in<div class="wedding-title-clock"></div>
@@ -56,13 +80,6 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      var thedate = moment.tz("2016-05-29T18:00:00","America/Phoenix").toDate()
-      $('div.wedding-title-clock').countdown(thedate,function(event) {
-        $(this).text(
-          event.strftime('%D:%H:%M:%S')
-        )
-      })
-    </script>
+    <script src="/index.js"></script>
   </body>
 </html>
