@@ -21,7 +21,7 @@ var color3 = "#17B9E4"
 var color4 = "#001848"
 
 var suntween = new TWEEN.Tween({length:0})
-    .to({length:sunpathLength},10000)
+    .to({length:sunpathLength},20000)
     .onUpdate(function() {
       var point = $sunpath[0].getPointAtLength(this.length)
       var screenWidth = $(window).width()
